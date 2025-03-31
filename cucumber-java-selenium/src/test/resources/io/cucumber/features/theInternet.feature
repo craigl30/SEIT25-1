@@ -6,6 +6,7 @@ Feature: The Internet
     Given the page under test is 'https://the-internet.herokuapp.com'
     And "Welcome to the-internet" is displayed
     Then the full list of links is displayed
+    //Page class created to define complete list of expected links to verify all present
 
   @TEST_TI_0002
   Scenario: Basic Auth allows validated access
