@@ -18,10 +18,16 @@ Feature: The Internet
   Scenario: Sortable Data Tables - Example 1 displays the expected 4 results
     Given the page under test is 'https://the-internet.herokuapp.com/tables'
     And 'Data Tables' header is displayed
-    When Last Name column header is left clicked
-    Then the data is sorted Last Name ascending
+    Then the data is present for Last Name, First Name, Email, Due and Web Site
+    //Here I'd create a page java class for Srtable Data Tables to define the data expected
 
   @TEST_TI_0004
+  Scenario: Sortable Data Tables - Example 1 displays the expected 4 results and sorts on Last Name
+    Given the page under test is 'Dropdown'
+    And Dropdown List is displayed
+    Then the two selectable options are Option 1 and Option 2
+
+  @TEST_TI_0005
   Scenario: Dropdown List - Option 1 and 2 are displayed
     Given the page under test is 'Dropdown'
     And Dropdown List is displayed
